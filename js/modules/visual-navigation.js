@@ -49,6 +49,8 @@
     $closeNav.trigger('click');
   });
 
+ 
+ /*** Masqué pour dev
   // Sticky things on scroll (gc)
   window.addEventListener('scroll', function() {
     clearTimeout(scrolltimer);
@@ -61,6 +63,7 @@
       }
 
     }, 15);
-  }, true);
+  }, true); 
+ */
 
 })(jQuery);

@@ -35,6 +35,8 @@
 		$(this).closest('.mn-item-lvl-1').trigger('mouseleave');
 	});
 
+	/* supprime la sticky nav
+	
 	// sticky things on scroll
 	var bannerHeight = $menuline.closest('.site-banner').height();
 	$menuline.closest('.site-banner').addClass('is-stuck');
@@ -63,7 +65,7 @@
 
 		}, 15);
 	});
-
+*/
 	$( window ).resize( function(event) {
 		clearTimeout(scrolltimer);
 		resizetimer = setTimeout(function(){
