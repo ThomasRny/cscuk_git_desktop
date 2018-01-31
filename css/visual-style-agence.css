@@ -1,1 +1,394 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
 
+/* UTILS */
+
+.floatr {
+    float: right;
+}
+
+/* COLORS */
+
+.txt-pink {
+    color: #DB57EA;
+}
+
+.txt-blue {
+    color: #0645F9;
+}
+
+.txt-lightblue {
+    color: #55C2E4;
+}
+
+
+/* LOGO */
+
+.logo {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+/* BUTTONS */
+
+
+
+/* HEADINGS */
+
+h2, h2.la-main-title.main-title {
+    font-size: 4.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #001E60;
+    text-transform: none;
+    margin-bottom: 0;
+    line-height: 5rem;
+}
+
+h2.la-main-title.main-title {
+    margin-left: 0;
+}
+
+.subtitle {
+    margin-top: 0 !important;
+}
+
+.subtitle:before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    margin-right: 15px;
+    height: 4px;
+    background: #F7C452;
+}
+
+h3.subtitle {
+    font-size: 2.5rem;
+}
+
+h4, .subtitle {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #001E60;
+    text-transform: none;
+}
+
+.hl-title {
+    font-size: 2.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: .5rem 2rem;
+}
+
+.hl-title--lightblue {
+    clear: both;
+    display: inline-block;
+    background: #56c1e5;
+}
+
+.hl-title--blue {
+    clear: both;
+    display: inline-block;
+    background: #001E60;
+}
+
+.small-title {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* PARAGRAPH */
+
+
+
+/* HEADER */
+
+.header-quicklinks {
+    text-align: right;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.site-banner {
+    color: #FFF;
+    background: #0745fa;
+    height: 90px;
+}
+
+.site-banner.is-stuck {
+    background: rgba(6, 69, 249, .9);
+}
+
+.site-banner.is-stuck .logo,
+.site-banner .logo {
+    margin-top: -30px;
+}
+
+.site-banner .btn-primary {
+    height: 36px;
+    padding-top: 0;
+    vertical-align: middle;
+}
+.site-banner .btn-primary .txt-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.site-banner .btn-primary {
+    border-radius: 0;
+    border: 1px solid white;
+    color: white;
+    text-transform: none;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    opacity: .7;
+    transition: opacity .2s ease-out;
+}
+
+.site-banner .btn-primary:hover {
+    box-shadow: none;
+    color: white;
+    opacity: 1;
+}
+
+.site-banner .inside,
+.is-stuck.site-banner .inside{
+    padding: 0;
+    padding-top: 25px;
+    /*top: 50%;
+    transform: translateY(-50%);*/
+}
+
+.is-stuck .sb-menu-btn {
+    margin-top: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/* HEADER DATE */
+
+.event-date {
+    font-family: 'Poppins', sans-serif;
+    height: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.event-date > div {
+    float: left;
+    padding: 0 10px;
+    height: 100%;
+}
+
+.event-date__day {
+    background: #d859e4;
+}
+
+.event-date__month {
+    background: #56c1e5;
+}
+
+.event-date__year {
+    background: #f6c54f;
+}
+
+.event-date__place {
+    background: rgba(0,0,0,.3);
+
+}
+
+.event-date span {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+}
+
+/* MENU */
+
+.sb-menu-btn {
+    position: inherit;
+    top: inherit;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sb-menu-btn-text {
+    visibility: hidden;
+}
+
+/* HERO */
+
+.zone-hero {
+    height: 100vh;
+    background: #0745fa url('images/hero-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.zone-hero__content {
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.zone-hero__logo {
+    margin-bottom: 8rem;
+}
+
+.zone-hero__logo img {
+    height: 50vh;
+}
+
+.zone-hero__subtitle {
+    margin-top: 2.5rem;
+}
+
+.zone-hero em {
+    color: #f6c54f;
+    font-weight: 500;
+}
+
+
+
+/* QUICK LINKS */
+
+.landing-page-quicklinks {
+    height: 95px;
+    text-align: center;
+    border-bottom: 1px solid #EBE6E6;
+}
+
+.landing-page-quicklinks .ql-list {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.landing-page-quicklinks ul li:not(.ql-social) {
+    margin-right: 100px;
+}
+
+.landing-page-quicklinks ul li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.landing-page-quicklinks ul li a:hover {
+    text-decoration: underline;
+}
+
+.landing-page-quicklinks ul li {
+    display: inline;
+}
+
+.ql-social span {
+    display: none;
+}
+
+/* EDITO */
+
+.front .edito {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    float: none;
+    margin-top: 90px;
+}
+
+/* BLOCKS */
+
+.block-page{
+    clear: both;
+    width: 100vw;
+
+}
+
+.block--secondary {
+    background: #F5F7FC;
+    margin-top: 90px;
+    padding: 90px 0;
+    padding-bottom: 350px;
+}
+
+.block--facts {
+    margin-top: -280px;
+}
+
+/* ACCORDION HORIZONTAL */
+
+.ah-item-title::after {
+    display: none;
+}
+
+
+.ah-btn {
+    border: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.ah-btn span {
+    font-size: 2.4rem;
+}
+
+.ah-btn--yellow {
+    background: #F7C452;
+}
+
+.ah-item--yellow:before {
+    border-left-color: #F7C452;
+}
+
+.ah-btn--yellow:focus, .ah-btn--yellow:hover  {
+    box-shadow:  inset 0 0 0 2px #EEC566;
+}
+
+.ah-btn--pink {
+    background: #DB57EA;
+}
+
+.ah-item--pink:before {
+    border-left-color: #DB57EA;
+}
+
+.ah-btn--pink:focus, .ah-btn--pink:hover  {
+    box-shadow:  inset 0 0 0 2px #CA63E3;
+}
+
+.ah-btn--lightblue {
+    background: #55C2E4;
+}
+
+.ah-btn--lightblue:focus, .ah-btn--lightblue:hover  {
+    box-shadow:  inset 0 0 0 2px #74C0E0;
+}
+
+.ah-item--lightblue:before {
+    border-left-color: #55C2E4;
+}
+
+.ah-btn--blue {
+    background: #0645F9;
+}
+
+.ah-btn--blue:focus, .ah-btn--blue:hover  {
+    box-shadow:  inset 0 0 0 2px #0645F9;
+}
+
+.ah-item--blue:before {
+    border-left-color: #0645F9;
+}
