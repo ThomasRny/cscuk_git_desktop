@@ -10,18 +10,85 @@ body{
     float: right;
 }
 
+/* LINKS */
+
+a, .link-read-more {
+    color: #0645F9;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover, .link-read-more:hover {
+    color: #0645F9;
+    border-bottom: 1px solid #0645F9;
+}
+
+.link-read-more {
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.link-read-more--large {
+    left: 30px;
+}
+
+.link-read-more--large:before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background: #0645F9;
+    position: absolute;
+    transform: translateX(calc( -50% - 8px ));
+    bottom: 0;
+    top: calc( -100% + 4px );
+}
+
+.link-read-more--large:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background: #0645F9;
+    transform: translateY(calc(-100% - 2px));
+    left: -10px;
+}
+
 /* COLORS */
 
-.txt-pink {
+.landing-page-quicklinks .ql-list li:nth-child(1) > a,
+.landing-page-quicklinks .ql-list li:nth-child(1) > a:hover,
+.txt-pink:hover {
     color: #DB57EA;
 }
 
-.txt-blue {
+.landing-page-quicklinks .ql-list li:nth-child(1) > a:hover,
+a.txt-pink:hover {
+    border-bottom: 1px solid #DB57EA;
+}
+
+.landing-page-quicklinks .ql-list li:nth-child(2) > a,
+.landing-page-quicklinks .ql-list li:nth-child(2) > a:hover,
+.txt-blue:hover{
     color: #0645F9;
 }
 
-.txt-lightblue {
+.landing-page-quicklinks .ql-list li:nth-child(2) > .btn-primary:hover,
+a.txt-blue:hover  {
+    border-bottom: 1px solid #0645F9;
+}
+
+.landing-page-quicklinks .ql-list li:nth-child(3) > a,
+.landing-page-quicklinks .ql-list li:nth-child(3) > a:hover,
+.txt-lightblue:hover{
     color: #55C2E4;
+}
+
+.landing-page-quicklinks .ql-list li:nth-child(3) > a:hover,
+a.txt-lightblue:hover {
+    border-bottom: 1px solid #55C2E4;
 }
 
 
@@ -35,7 +102,14 @@ body{
 
 /* BUTTONS */
 
+.btn-primary {
+    color: #0645F9;
+}
 
+.edito-item-btn {
+    position: absolute;
+    bottom: 0;
+}
 
 /* HEADINGS */
 
@@ -53,11 +127,12 @@ h2.la-main-title.main-title {
     margin-left: 0;
 }
 
-.subtitle {
+h3 {
     margin-top: 0 !important;
+    font-size: 2.5rem !important;
 }
 
-.subtitle:before {
+h4:before {
     content: '';
     display: inline-block;
     width: 35px;
@@ -66,16 +141,13 @@ h2.la-main-title.main-title {
     background: #F7C452;
 }
 
-h3.subtitle {
-    font-size: 2.5rem;
-}
-
-h4, .subtitle {
+h3, h4 {
     font-size: 3.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #001E60;
     text-transform: none;
+    margin-top: 0 !important;
 }
 
 .hl-title {
@@ -230,7 +302,7 @@ h4, .subtitle {
 
 .zone-hero {
     height: 100vh;
-    background: #0745fa url('images/hero-bg.jpg') no-repeat;
+    background: #0745fa url('img/hero-bg.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -275,8 +347,29 @@ h4, .subtitle {
     transform: translateY(-50%);
 }
 
-.landing-page-quicklinks ul li:not(.ql-social) {
+.landing-page-quicklinks .block-title {
+    display: none;
+}
+
+.landing-page-quicklinks .ql-list .btn-primary {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+    text-transform: none;
+    padding: 0;
+}
+
+.landing-page-quicklinks .ql-list .btn-primary:hover {
+    border: 0;
+    box-shadow: none;
+}
+
+.landing-page-quicklinks ul li {
     margin-right: 100px;
+}
+
+.landing-page-quicklinks .ql-item:nth-child(n+4) {
+    margin-right: 0;
 }
 
 .landing-page-quicklinks ul li a {
@@ -285,15 +378,27 @@ h4, .subtitle {
     text-decoration: none;
 }
 
-.landing-page-quicklinks ul li a:hover {
-    text-decoration: underline;
-}
-
 .landing-page-quicklinks ul li {
     display: inline;
 }
 
-.ql-social span {
+.ql-social i {
+    vertical-align: middle;
+}
+
+.landing-page-quicklinks .ql-item i {
+    opacity: .4;
+    font-size: 4rem;
+    transition: opacity .2s ease-in;
+    -webkit-backface-visibility: hidden;
+}
+
+.landing-page-quicklinks .ql-item  a:hover i{
+    border: none;
+    opacity: 1;
+}
+
+.landing-page-quicklinks .ql-item i ~ span {
     display: none;
 }
 
@@ -305,6 +410,7 @@ h4, .subtitle {
     padding: 0;
     float: none;
     margin-top: 90px;
+    position: relative;
 }
 
 /* BLOCKS */
