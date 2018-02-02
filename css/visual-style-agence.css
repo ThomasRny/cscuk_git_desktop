@@ -188,8 +188,15 @@ h3, h4 {
 
 .site-banner {
     color: #FFF;
-    background: #0745fa;
+    background: rgba( 6, 69, 249, .8);
     height: 90px;
+    width: 100%;
+    z-index: 600;
+    position: absolute;
+}
+
+.site-banner .inside {
+    max-width: none;
 }
 
 .site-banner.is-stuck {
@@ -199,6 +206,7 @@ h3, h4 {
 .site-banner.is-stuck .logo,
 .site-banner .logo {
     margin-top: -30px;
+    margin-left: 70px;
 }
 
 .site-banner .btn-primary {
@@ -297,6 +305,133 @@ h3, h4 {
 .sb-menu-btn-text {
     visibility: hidden;
 }
+[class*="mn-menu-lvl"] {
+    left: inherit;
+    right: 0;
+    width: 510px;
+    background: white;
+    text-align: right;
+    padding-top: inherit;
+}
+
+.main-navigation {
+    left: inherit;
+    right: 0;
+    transform: translateX(510px);
+    -webkit-transform: translateX(510px);
+}
+
+.mn-menu-line {
+    padding-top: 310px;
+}
+
+.mn-menu-lvl1:after {
+    content: "";
+    background: url(img/logo-CSC_UK-menu.svg);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: 1000;
+    width: 224px;
+    height: 305px;
+}
+
+.mn-menu-lvl2 {
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    bottom: inherit;
+    transform: none;
+    position: inherit;
+    width: auto;
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+
+}
+
+.mn-menu-lvl1 {
+    padding-right: 95px;
+}
+
+.mn-item-lvl-1.is-open .mn-menu-lvl2 {
+    transform: none;
+    display: block;
+    max-height: 200px;
+}
+
+.mn-item-lvl-1 a {
+    color: #383838;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    transition: font-size .2s ease-out;
+    text-transform: none;
+    position: relative;
+}
+
+.mn-item-lvl-1 a:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 35px;
+    background: #B2BBCF;
+    top: 50%;
+    margin-top: -1px;
+    margin-left: 20px;
+}
+
+.mn-item-lvl-1.is-open > a, .mn-item-lvl-1 > .mn-link:focus, .mn-item-lvl-1 > .mn-link:hover, .mn-item-lvl-1 > .mn-link:active, .mn-item-lvl-1 > .mn-link.is-active {
+    background: none;
+    color: #0645F9;
+    font-size: 2.5rem;
+    border: none;
+}
+
+.mn-item-lvl-1.is-open > a:after, .mn-item-lvl-1 > .mn-link:focus:after, .mn-item-lvl-1 > .mn-link:hover:after, .mn-item-lvl-1 > .mn-link:active:after, .mn-item-lvl-1 > .mn-link.is-active:after {
+    background: #0645F9;
+}
+
+.mn-item-lvl-2 > a {
+    background: none;
+    color: #0645F9;
+    font-size: 1.6rem;
+    border: none;
+    text-transform: none;
+}
+
+.mn-item-lvl-2 > a:hover {
+    color: #0645F9;
+    background: none;
+}
+
+.mn-item-lvl-2 > a:hover > span {
+    border-bottom: 1px solid #0645F9;
+}
+
+.mn-link {
+    padding: .9rem 1.5rem;
+}
+
+.mn-menu-item.is-open > .mn-link {
+    background: none;
+}
+
+.mn-menu-toclose {
+    left: -500px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+    background: #0645F9;
+    right: 0;
+    top: 0;
+    left: inherit;
+}
+
 
 /* HERO */
 
@@ -305,6 +440,7 @@ h3, h4 {
     background: #0745fa url('img/hero-bg.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    /*margin-top: -90px;*/
 }
 
 .zone-hero__content {
