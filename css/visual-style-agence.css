@@ -29,11 +29,11 @@ a:hover, .link-read-more:hover {
     vertical-align: bottom;
 }
 
-.link-read-more--large {
-    left: 30px;
+.block-page.edito .link-read-more{
+    right: 0;
 }
 
-.link-read-more--large:before {
+.block-page.edito .link-read-more:before {
     content: "";
     display: inline-block;
     width: 60px;
@@ -45,7 +45,7 @@ a:hover, .link-read-more:hover {
     top: calc( -100% + 4px );
 }
 
-.link-read-more--large:after {
+.block-page.edito .link-read-more:after {
     content: "";
     display: block;
     position: absolute;
@@ -109,6 +109,7 @@ a.txt-lightblue:hover {
 .edito-item-btn {
     position: absolute;
     bottom: 0;
+    right: 40px;
 }
 
 /* HEADINGS */
@@ -172,6 +173,16 @@ h3, h4 {
 .small-title {
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
+}
+
+/* GRID */
+
+.grid-1 > * {
+    width: calc(100% * 1 - 1.5em - .01px);
+}
+
+.grid-1 > div {
+    margin-left: 0;
 }
 
 /* PARAGRAPH */
@@ -547,6 +558,16 @@ h3, h4 {
     float: none;
     margin-top: 90px;
     position: relative;
+}
+
+.block-page.edito {
+    max-width: 1024px;
+    margin: 90px auto 0 auto;
+}
+
+.block-page.edito .inside{
+    width: 70%;
+    margin: 0;
 }
 
 /* BLOCKS */
