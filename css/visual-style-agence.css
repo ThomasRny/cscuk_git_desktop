@@ -655,3 +655,121 @@ h3, h4 {
 .ah-item--blue:before {
     border-left-color: #0645F9;
 }
+
+/* FOOTER */
+
+.site-footer {
+    clear: both;
+    background: #0645F9;
+}
+
+.site-footer:before {
+    display: none;
+}
+
+/* NEWSLETTER BLOCK */
+
+.front .newsletter-form {
+    background: #1A4BD8;
+    font-family: "Poppins", sans-serif;
+    height: 115px;
+}
+
+.block-page.newsletter-form .box-dark {
+    position: relative;
+    z-index: 100;
+    background: #1A4BD8;
+    padding: 0;
+}
+
+.block-page.newsletter-form .box-dark .inside {
+    height: 115px;
+}
+
+.block-page.newsletter-form .nf-main-content {
+    margin: 0;
+}
+
+.block-page.newsletter-form .nf-title {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    float: left;
+    vertical-align: middle;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.block-page.newsletter-form form {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+/*.block-page.newsletter-form label {
+    display: none;
+}*/
+
+
+.block-page.newsletter-form .nf-subtitle,
+.block-page.newsletter-form .nf-subtitle + p,
+.block-page.newsletter-form .nf-subtitle + p + p{
+    display: none;
+}
+
+.block-page.newsletter-form  .nf-form-item {
+
+}
+
+.block-page.newsletter-form .nf-form-input {
+    display: inline-block;
+}
+
+.block-page.newsletter-form .nf-form-input input {
+    margin: 0;
+    border: 1px solid white;
+    padding: 0;
+    line-height: calc(4.5rem - 2px);
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    padding-left: 1.7rem;
+
+}
+
+input[type="email"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white !important;
+}
+input[type="email"]::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+}
+input[type="email"]:-ms-input-placeholder { /* IE 10+ */
+    color: white;
+}
+input[type="email"]:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+
+.block-page.newsletter-form .nf-form-submit {
+    display: inline-block;
+    border: none;
+    background: #F7C452;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+.block-page.newsletter-form .nf-form-submit button {
+    border: none;
+    color: white !important;
+    line-height: 4.5rem;
+    padding: 0 4rem;
+    text-transform: none;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+.block-page.newsletter-form .nf-form-submit button i {
+    display: none;
+}
