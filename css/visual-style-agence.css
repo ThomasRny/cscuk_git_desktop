@@ -9,7 +9,7 @@ body{
     min-height: 100%;
 }
 
-body:before {
+/*body:before {
     content: '';
     display: block;
     height: 100%;
@@ -18,10 +18,10 @@ body:before {
     left: 0;
     position: absolute;
     z-index: 1000000;
-    /*background: url('img/cercle-pattern.svg') repeat-y;*/
-    /*background-size: cover;*/
+    background: url('img/cercle-pattern.svg') repeat-y;
+    background-size: cover;
     min-height: 100%;
-}
+}*/
 
 /* UTILS */
 
