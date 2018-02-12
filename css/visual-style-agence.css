@@ -18,8 +18,8 @@ body:before {
     left: 0;
     position: absolute;
     z-index: 1000000;
-    background: url('img/cercle-pattern.svg') repeat-y;
-    background-size: cover;
+    /*background: url('img/cercle-pattern.svg') repeat-y;*/
+    /*background-size: cover;*/
     min-height: 100%;
 }
 
@@ -1092,4 +1092,11 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     padding-top: 150px;
     background: url('img/quote.svg') no-repeat;
     background-position: top left;
+}
+
+/** VIEW FULL ARTICLE **/
+
+.article-content {
+    max-width: 1024px;
+    margin: 0 auto;
 }
