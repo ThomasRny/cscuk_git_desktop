@@ -213,3 +213,7 @@
 // Move article intro into article title
 
 $(".article-intro").appendTo(".article-title .inside").show();
+
+// Move article title image into article content
+
+$(".article-title .at-illust").addClass("article-image").prependTo(".article-content").show();
