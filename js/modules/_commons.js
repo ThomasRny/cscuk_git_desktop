@@ -209,3 +209,7 @@
   $('html').ie10Detectizr();
 
 }(jQuery));
+
+// Move article intro into article title
+
+$(".article-intro").appendTo(".article-title .inside").show();
