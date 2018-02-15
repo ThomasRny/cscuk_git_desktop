@@ -1102,11 +1102,22 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 }
 
 .landing-page-focus {
-    max-width: 1024px;
-    margin: 6.5rem auto;
-    padding-top: 150px;
+    float: left;
+    width: 50%;
+    margin: 6.5rem 0;
+    padding: 150px 2rem 0 2rem;
     background: url('img/quote.svg') no-repeat;
     background-position: top left;
+}
+
+
+/** BLOCK TWITTER **/
+
+.tpt-item.twitter {
+    width: 50%;
+    float: right;
+    margin: 6.5rem 0;
+    padding: 0 2rem;
 }
 
 
