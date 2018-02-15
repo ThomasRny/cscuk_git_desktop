@@ -222,4 +222,5 @@ $(".article-title .at-illust").addClass("article-image").prependTo(".article-con
 
 if ( $(".bn-list").length && $(".article-intro").length ) {
     $(".bn-list").prependTo(".article-intro");
+    $(".breadcrumb-nav").remove();
 }
