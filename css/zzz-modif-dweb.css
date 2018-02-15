@@ -39,7 +39,7 @@
 .icon-short-arrow-right {
     width: 35px;
     height: 27px;
-    background-image: url(img/icon-short-arrow-right.png);
+    /** background-image: url(img/icon-short-arrow-right.png); **/
 }
 .article-wrapper .article-navigation img {
     opacity: .5;
@@ -132,7 +132,7 @@
     width: 61%;
     display: inline-block;
     left: 0px;
-    margin-left: -5px;
+    margin-left: -6px;
 }
 .article-wrapper .article-navigation .an-item-previous a{text-align:left; margin: 0px; padding: 0; */}
 .article-wrapper .article-navigation  .an-item-previous img{
