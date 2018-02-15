@@ -216,7 +216,7 @@ h3, h4 {
 
 .site-banner {
     color: #FFF;
-    background: rgba( 6, 69, 249, .8);
+    background: rgba( 6, 69, 249, .9);
     height: 90px;
     width: 100%;
     z-index: 600;
@@ -349,7 +349,7 @@ h3, h4 {
     -webkit-transform: translateX(510px);
 }
 
-.main-navigation ul {
+.main-navigation .mn-menu.mn-menu-lvl1 {
     overflow: scroll;
 }
 
@@ -424,6 +424,10 @@ h3, h4 {
 }
 
 .mn-item-lvl-1.is-open > a:after, .mn-item-lvl-1 > .mn-link:focus:after, .mn-item-lvl-1 > .mn-link:hover:after, .mn-item-lvl-1 > .mn-link:active:after, .mn-item-lvl-1 > .mn-link.is-active:after {
+    background: #0645F9;
+}
+
+.mn-link:focus, .mn-link:hover, .mn-link:active, .mn-link.is-active {
     background: #0645F9;
 }
 
@@ -1028,6 +1032,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     position: relative;
 }
 
+.list-articles .gla-item:nth-child(2) {
+    top: inherit;
+}
+
 .grid-la-list {
     display: flex;
     flex-wrap: wrap;
@@ -1040,6 +1048,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .grid-la-list > * {
     width: inherit;
+}
+
+.gla-item-tag {
+    background: #08205C;
 }
 
 .gla-item > a {
@@ -1321,6 +1333,11 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 .bn-item-link {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    color: #777777;
+}
+
+.article .bn-item-link {
+    color: white;
 }
 
 .bn-list li a:not(:last-child):after {
@@ -1332,9 +1349,26 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     color: inherit;
 }
 
-.bn-item-link:focus, .bn-item-link:hover,
-.bn-item:first-child .bn-item-link:focus, .bn-item:first-child .bn-item-link:hover {
+.bn-item-link:focus,
+.bn-item-link:hover,
+.bn-item:first-child .bn-item-link:focus,
+.bn-item:first-child .bn-item-link:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: #0645F9;
+}
+
+.article .bn-item-link:focus,
+.article .bn-item-link:hover,
+.article .bn-item:first-child .bn-item-link:focus,
+.article .bn-item:first-child .bn-item-link:hover {
     text-decoration: none;
     border-bottom: none;
     color: #f6c54f;
+}
+
+/* ARTICLE LIST */
+
+.article_list .layout-2-col {
+    padding-top: 90px;
 }
