@@ -196,3 +196,8 @@ display:none;
     font-size: 4.2rem !important;
     padding-top: 1em;
 }
+
+.partner-list h3.pl-item-title {
+    border-bottom: 1px solid #000000;
+    padding-top: 26px;
+}
