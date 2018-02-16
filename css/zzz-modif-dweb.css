@@ -188,7 +188,7 @@ display:none;
 
 }
 
-.sitemap h1 span.ezstring-field {
+.sitemap h1 span.ezstring-field, .partner-list h1 {
     font-family: 'Poppins', sans-serif;
     color: #001E60;
     text-transform: none;
