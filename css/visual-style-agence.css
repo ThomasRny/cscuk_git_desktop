@@ -61,7 +61,9 @@ a:focus, a:active, a:hover, .link-read-more:hover {
     left: -10px;
 }
 
-/* COLORS */
+.lien1
+
+    /* COLORS */
 
 .landing-page-quicklinks .ql-list li:nth-child(1) > a,
 .landing-page-quicklinks .ql-list li:nth-child(1) > a:hover,
@@ -189,10 +191,6 @@ h3, h4 {
 .grid-1 > div {
     margin-left: 0;
 }
-
-/* PARAGRAPH */
-
-
 
 /* HEADER */
 
@@ -594,7 +592,7 @@ h3, h4 {
 .block-page{
     clear: both;
     width: 100vw;
-    padding-top: 130px;
+    padding-top: 90px;
 }
 
 .block--secondary {
@@ -1073,6 +1071,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     font-weight: 100;
 }
 
+.inside, .article-wrapper {
+    padding: 0;
+}
+
 .article-focus {
     background: none;
     font-family: "Poppins", sans-serif;
@@ -1134,6 +1136,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     width: 100%;
     position: inherit;
     bottom: inherit;
+}
+
+.article-title h1 {
+    color: white;
 }
 
 .at-theme {
