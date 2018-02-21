@@ -61,9 +61,51 @@ a:focus, a:active, a:hover, .link-read-more:hover {
     left: -10px;
 }
 
-.lien1
+.lien1 {
+    background: #F7C452;
+    color: #fff;
+    padding: 1rem;
+}
 
-    /* COLORS */
+.lien1:hover, .lien1:focus,
+.lien2:hover, .lien2:focus{
+    border: none;
+    color: white;
+}
+
+.lien2 {
+    background: #001E6F;
+    color: #fff;
+    padding: 1rem;
+}
+
+.lien4 {
+    border-bottom: 2px solid #F7C452;
+    color: #001E60;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.lien4:hover {
+    border-bottom: 2px solid #F7C452;
+    color: #001E60;
+}
+
+.lien4:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -28px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGRhdGEtbmFtZT0iMTItRG93bmxvYWQiIGlkPSJfMTItRG93bmxvYWQiPjxwb2x5bGluZSBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMSAxOSAxIDMxIDMxIDMxIDMxIDE5Ii8+PHBvbHlsaW5lIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyNCAxNiAxNiAyNCA4IDE2Ii8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMTYiIHgyPSIxNiIgeTE9IjI0Ii8+PC9nPjwvc3ZnPg==');
+    background-repeat: no-repeat;
+}
+
+/* COLORS */
 
 .landing-page-quicklinks .ql-list li:nth-child(1) > a,
 .landing-page-quicklinks .ql-list li:nth-child(1) > a:hover,
@@ -121,7 +163,15 @@ a.txt-lightblue:hover {
 
 /* HEADINGS */
 
-h1, h2, h2.main-title, h2.la-main-title {
+h1 {
+    font-size: 4.2rem !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+    color: #001E60;
+    text-transform: none !important;
+}
+
+h2, h2.main-title, h2.la-main-title {
     font-size: 4.2rem !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 600;
@@ -592,7 +642,6 @@ h3, h4 {
 .block-page{
     clear: both;
     width: 100vw;
-    padding-top: 90px;
 }
 
 .block--secondary {
@@ -1144,7 +1193,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 }
 
 .article-title h1 {
-    color: white;
+    color: white !important;
 }
 
 .at-theme {
