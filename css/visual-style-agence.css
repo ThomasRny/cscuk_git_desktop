@@ -682,7 +682,7 @@ h3, h4 {
 }
 
 .site-footer .inside {
-    padding: 2rem 0;
+    padding: 2rem;
     background: none;
 }
 
@@ -752,6 +752,7 @@ h3, h4 {
 
 .block-page.newsletter-form .box-dark .inside {
     height: 115px;
+    padding: 0 2rem;
 }
 
 .block-page.newsletter-form .nf-main-content {
@@ -846,6 +847,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .block-page.newsletter-form .nf-form-submit button i {
     display: none;
+}
+
+.block-page .inside {
+    padding: 2rem;
 }
 
 /* Liens footer */
