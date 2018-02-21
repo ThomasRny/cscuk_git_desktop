@@ -1415,6 +1415,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .faq-content {
     background: none;
+    padding: 0 2rem;
 }
 
 .faq-sub-title {
