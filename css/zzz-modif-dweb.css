@@ -178,7 +178,7 @@
     margin-top: 0 !important;
 }
 
-.sitemap .layout-2-col, .partner .layout-2-col {
+.sitemap .layout-2-col{
     padding-top: 127px;
 }
 
@@ -200,6 +200,7 @@ display:none;
 /**** Liste des partenaires ****/
 .partner img.pl-item-illust {
     background: transparent;
+	max-height:250px;
 }
 
 .partner-list h3.pl-item-title {
