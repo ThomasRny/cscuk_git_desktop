@@ -213,6 +213,10 @@ h3, h4 {
     margin-top: 0 !important;
 }
 
+h5, .h5-like {
+    color: #001E60;
+}
+
 .hl-title {
     font-size: 2.8rem;
     font-family: "Poppins", sans-serif;
