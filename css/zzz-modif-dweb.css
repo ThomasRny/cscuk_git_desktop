@@ -260,6 +260,7 @@ a.cc-cookie-link {
 
 li.mn-menu-item.mn-item-lvl-1 ul.mn-menu-submenu a {
     cursor: pointer;
+text-transform: uppercase;
 }
 
 li.mn-menu-item.mn-item-lvl-1 a:first-child {
