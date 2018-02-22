@@ -1482,6 +1482,10 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     padding: 0 2rem;
 }
 
+.faq-main-title {
+    color: #001E60
+}
+
 .faq-sub-title {
     font-size: 3rem;
     color: #001E60;
