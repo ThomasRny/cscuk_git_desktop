@@ -1181,6 +1181,11 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     margin: 0 auto;
 }
 
+.article-content ul li::before {
+    vertical-align: middle;
+    margin-top: none;
+}
+
 .article-title {
     min-height: 480px;
     background: #0745fa url('img/hero-bg.jpg') no-repeat;
@@ -1411,6 +1416,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 .bn-list li a:not(:last-child):after {
     content: "  •  ";
     padding: 0 5px;
+    color: #F5C74D;
 }
 
 .bn-item:first-child .bn-item-link {
