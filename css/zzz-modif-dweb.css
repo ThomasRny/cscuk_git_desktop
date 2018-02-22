@@ -275,3 +275,10 @@ text-transform: uppercase;
 li.mn-menu-item.mn-item-lvl-1 a:first-child {
     cursor: default;
 }
+
+
+/***** TITRE YOUTUBE HOME ****/
+
+.bloc-home-youtube .main-title:after {
+    background-color: #F7C452;
+}
