@@ -1509,7 +1509,8 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 }
 
 .item-is-open .fc-item-wrap {
-    border: none
+    border: none;
+    /* width: 50%; */
 }
 
 .fc-list-link .icon {
@@ -1518,6 +1519,18 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .fc-item-link:hover {
     color: white;
+}
+
+.js .fc-item {
+    transition: opacity 0s;
+}
+
+.js .fc-item.is-open {
+    transition-duration: .4s;
+}
+
+.fc-item-wrap {
+    overflow: hidden;
 }
 
 .icon-plus {
