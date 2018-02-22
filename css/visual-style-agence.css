@@ -1079,14 +1079,11 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
     margin-top: 0;
 }
 
-.gla-item:nth-child(2) {
+.news-home .gla-item:nth-child(2) {
     top: 40px;
     position: relative;
 }
 
-.list-articles .gla-item:nth-child(2) {
-    top: inherit;
-}
 
 .grid-la-list {
     display: flex;
