@@ -81,16 +81,3 @@
    $('.cxp-newsletter').cxpNewsletter();
 
  })(jQuery);
-
-
-// Move label to input placeholder in bottom NL block
-
-$(".nf-form-input :input").each(function(index, elem) {
-    var eId = "nf1";
-    var label = null;
-    if (eId && (label = $(elem).parents("form").find("label[for="+eId+"]")).length == 1) {
-        $(label).find('.nf-required').remove();
-        $(elem).attr("placeholder", label.html());
-        $(label).remove();
-    }
-});
