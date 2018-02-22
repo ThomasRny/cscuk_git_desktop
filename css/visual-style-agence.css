@@ -79,6 +79,11 @@ a:focus, a:active, a:hover, .link-read-more:hover {
     padding: 1rem;
 }
 
+.lien3, .lien3:hover {
+    border-bottom : 2px solid #F7C452;
+    color: #001E6F;
+}
+
 .lien4 {
     border-bottom: 2px solid #F7C452;
     color: #001E60;
