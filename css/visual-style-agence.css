@@ -1205,7 +1205,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .article-content ul li::before {
     vertical-align: middle;
-    margin-top: none;
+    margin-top: 0;
 }
 
 .article-title {
