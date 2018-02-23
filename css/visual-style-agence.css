@@ -933,7 +933,7 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 }
 
 .block-page .inside {
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 /* Liens footer */
