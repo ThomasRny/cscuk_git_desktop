@@ -298,7 +298,9 @@ li.mn-menu-item.mn-item-lvl-1 a:first-child {
 }
 
 /*** SLIDER HOME PARTNERS ****/
-
+.partner-gallery.slider [class*="slider-btn-"]{
+bottom:1.65em;
+}
 [class*="slider-btn-"]:focus, [class*="slider-btn-"]:hover {
     background: transparent;
 }
