@@ -29,11 +29,11 @@ a:focus, a:active, a:hover, .link-read-more:hover {
 }
 
 a, [class^="btn"] {
-    -webkit-transition: border time;
-    -moz-transition: border time;
-    -ms-transition: border time;
-    -o-transition: border time;
-    transition: border time;
+    -webkit-transition: border 0s;
+    -moz-transition: border 0s;
+    -ms-transition: border 0s;
+    -o-transition: border 0s;
+    transition: border 0s;
 }
 
 .link-read-more {
@@ -74,6 +74,7 @@ a, [class^="btn"] {
     background: #F7C452;
     color: #fff;
     padding: 1rem;
+    border: none;
 }
 
 .lien1:hover, .lien1:focus,
@@ -86,6 +87,7 @@ a, [class^="btn"] {
     background: #001E6F;
     color: #fff;
     padding: 1rem;
+    border: none;
 }
 
 .lien3, .lien3:hover {
@@ -274,7 +276,7 @@ h5, .h5-like {
     height: 90px;
     width: 100%;
     z-index: 600;
-    position: absolute;
+    position: fixed;
 }
 
 .site-banner .inside {
@@ -868,8 +870,37 @@ h5, .h5-like {
     text-align: right;
 }
 
+.nf-main-content {
+    text-align: right;
+}
+
 .nf-main-content p {
+    margin-top: 0;
     display: inline-block;
+    vertical-align: middle;
+}
+
+.nf-main-content .nf-success-msg.has-error .icon {
+    color: #F7C452;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.nf-result {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.nf-result .btn-primary {
+    color: white;
+    margin-left: 1rem;
+    padding: 1rem
+}
+
+.nf-result .btn-primary:hover {
+    color: #F7C452;
+    box-shadow: none;
 }
 
 /*.block-page.newsletter-form label {
