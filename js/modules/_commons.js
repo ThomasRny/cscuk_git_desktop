@@ -220,8 +220,8 @@ $(".article-title .at-illust").addClass("article-image").prependTo(".article-con
 
 // Move breadcrumb under article title if on article page
 
-if ( $(".bn-list").length && $(".article-intro").length ) {
-    $(".bn-list").prependTo(".article-intro");
+if ( $(".bn-list").length && $(".article-title").length ) {
+    $(".bn-list").appendTo(".article-title .at-content");
     $(".breadcrumb-nav").remove();
 }
 

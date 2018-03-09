@@ -165,6 +165,11 @@ a.txt-lightblue:hover {
     float: left;
 }
 
+.logo a,
+.logo a:hover {
+    border-bottom: 0;
+}
+
 /* BUTTONS */
 
 .btn-primary {
@@ -1465,6 +1470,11 @@ input[type="email"]:-moz-placeholder { /* Firefox 18- */
 
 .article .bn-item-link {
     color: white;
+}
+
+.bn-list {
+    padding-left: 170px !important;
+    padding-bottom: 10px;
 }
 
 .bn-list li a:not(:last-child):after {
