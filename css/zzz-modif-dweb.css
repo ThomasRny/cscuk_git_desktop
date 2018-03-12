@@ -322,3 +322,8 @@ background-color: #ffffff;
     right: -0.5em;
     box-shadow: none;
 }
+
+/***** ARIANE *****/
+.bn-list li.bn-item:nth-child(2) a.bn-item-link {
+    pointer-events: none;
+}
