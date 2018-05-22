@@ -40,7 +40,7 @@
   $.fn.toggleSlide = function(options) {
 
     var settings = $.extend({
-      speed: 200
+      speed: 500
     }, options);
 
     return this.each(function() {
@@ -84,7 +84,7 @@
   $.fn.toggleBox = function(options) {
 
     var settings = $.extend({
-      speed: 200
+      speed: 500
     }, options);
 
     return this.each(function() {
