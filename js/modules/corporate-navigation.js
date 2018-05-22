@@ -18,7 +18,7 @@
 		resizetimer;
 
 	// actions on mouse interactions
-	$submenus.on('mouseenter.megamenu', function(e){
+	$submenus.on('click.megamenu', function(e){
 			$(this).addClass('is-open')
 				.find('> .mn-sub-menu-mega, > .mn-sub-menu').stop().fadeIn(speed);
 		})
