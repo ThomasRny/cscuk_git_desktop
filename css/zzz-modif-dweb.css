@@ -327,8 +327,28 @@ background-color: #ffffff;
 .bn-list li.bn-item:nth-child(2) a.bn-item-link {
     pointer-events: none;
 }
-
 /**** ENLEVER TITRE THEME ET TITRE FAQ ****/
 .faq .faq-sub-title, .faq .js-sna-menu, .faq .fc-title {
     display: none;
+}
+/**** AJOUT DE CALL TO ACTION DANS LE HEADER ****/
+
+.header-be-lien li:first-child a {
+    background-color: #56C1E5;
+    opacity:1;
+    border:0;
+}
+.header-be-lien li:last-child a {
+    background-color: #001E60;
+    opacity:1;
+    border:0;
+}
+.block.block-small.quicklinks.header-be-lien {
+    float: left;
+    padding-right: 10px;
+    padding-top:1px;
+}
+.header-be-lien li {
+    display: inline-block;
+    padding-left: 10px;
 }
