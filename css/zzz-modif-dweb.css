@@ -352,3 +352,12 @@ background-color: #ffffff;
     display: inline-block;
     padding-left: 10px;
 }
+
+/**** DEPLACER LOGO POUR TABLETTE *****/
+
+@media screen and (max-width: 1020px) {
+  .site-banner.is-stuck .logo, .site-banner .logo {
+    margin-top: -30px;
+    margin-left: 25px !important;
+  }
+}
