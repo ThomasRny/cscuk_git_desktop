@@ -343,12 +343,12 @@ background-color: #ffffff;
 	border-radius:10px;
 }
 .header-be-lien li:last-child a:hover {
-     box-shadow: inset 150px 0 0 0 #001E60;
+     box-shadow: inset 170px 0 0 0 #001E60;
     color: #fff;
     border-radius:0;
 }
 .header-be-lien li:first-child a:hover{
-	box-shadow: inset 150px 0 0 0 #56C1E5;
+	box-shadow: inset 170px 0 0 0 #56C1E5;
     color: #fff;
     border-radius:0;
 }
