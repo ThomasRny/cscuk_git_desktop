@@ -370,6 +370,9 @@ background-color: #ffffff;
     margin-top: -30px;
     margin-left: 25px !important;
   }
+	.sb-menu-btn .icon{
+		    margin-right: -1.5em;
+	}
 }
 
 
