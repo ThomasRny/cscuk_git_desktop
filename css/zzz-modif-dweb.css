@@ -333,16 +333,26 @@ background-color: #ffffff;
 }
 /**** AJOUT DE CALL TO ACTION DANS LE HEADER ****/
 
-.header-be-lien li:first-child a {
-    background-color: #56C1E5;
-    opacity:1;
-    border:0;
+.header-be-lien li:last-child a, .header-be-lien li:first-child a {
+     box-shadow: inset 0 0 0 0 transparent;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+	background:none;
+	border:1px solid #ffffff;
+	border-radius:10px;
 }
-.header-be-lien li:last-child a {
-    background-color: #001E60;
-    opacity:1;
-    border:0;
+.header-be-lien li:last-child a:hover {
+     box-shadow: inset 150px 0 0 0 #001E60;
+    color: #fff;
+    border-radius:0;
 }
+.header-be-lien li:first-child a:hover{
+	box-shadow: inset 150px 0 0 0 #56C1E5;
+    color: #fff;
+    border-radius:0;
+}
+
 .block.block-small.quicklinks.header-be-lien {
     float: left;
     padding-right: 10px;
@@ -360,4 +370,11 @@ background-color: #ffffff;
     margin-top: -30px;
     margin-left: 25px !important;
   }
+}
+
+
+/**** BLOC DATE ****/
+
+.event-date{
+margin-left:15px;
 }
