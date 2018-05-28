@@ -341,6 +341,7 @@ background-color: #ffffff;
 	background:none;
 	border:1px solid #ffffff;
 	border-radius:10px;
+	opacity:1;
 }
 .header-be-lien li:last-child a:hover {
      box-shadow: inset 170px 0 0 0 #001E60;
