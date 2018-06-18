@@ -382,3 +382,10 @@ background-color: #ffffff;
 .event-date{
 margin-left:15px;
 }
+
+
+/**** FOOTER ****/
+
+.liens-footer .ql-item:nth-child(n+4) {
+    float: inherit;
+}
