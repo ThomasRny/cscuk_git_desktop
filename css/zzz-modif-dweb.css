@@ -389,3 +389,32 @@ margin-left:15px;
 .liens-footer .ql-item:nth-child(n+4) {
     float: inherit;
 }
+
+/**** SHARE ARTICLE ****/
+
+.social-sharing {
+    border-left: 2px solid rgba( 6,69,249,.8);
+    padding: 1.35em 1em;
+}
+
+.social-sharing .inside {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+.block.block-page.social-sharing {
+    border: transparent;
+}
+
+.block.block-page.social-sharing:first-child {
+    border-left: 2px solid rgba( 6,69,249,.8);
+	    background-color: #F5F5F5;
+}
+
+.social-sharing .sr-title {
+    display: inline-block;
+}
+
+.social-sharing [class^=btn-]{
+    color: #386AFA;
+}
