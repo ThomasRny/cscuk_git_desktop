@@ -419,3 +419,6 @@ margin-left:15px;
 .social-sharing [class^=btn-]{
     color: #386AFA;
 }
+.social-sharing ul.sr-list.unstyled {
+    display: inline-block;
+}
