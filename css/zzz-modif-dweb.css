@@ -422,3 +422,62 @@ margin-left:15px;
 .social-sharing ul.sr-list.unstyled {
     display: inline-block;
 }
+
+.social-sharing .sr-item-txt, .sl-item-txt {
+    position: absolute!important;
+    border: 0!important;
+    height: 1px!important;
+    width: 1px!important;
+    padding: 0!important;
+    overflow: hidden!important;
+    clip: rect(1px,1px,1px,1px)!important;
+}
+
+.social-sharing .sr-item {
+    display: inline-block;
+    padding: 0;
+}
+.sr-item {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.social-sharing .sr-title {
+    display: none;
+}
+
+.social-sharing {
+    margin: 1em 0;
+    text-align: right;
+}
+.social-sharing {
+    margin: 1em 0;
+    text-align: right;
+}
+
+[class*=sr-link] .icon{
+    font-size: 2rem;
+}
+
+.btn-large .icon {
+    font-size: 1.4rem;
+}
+[class^=btn] .icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .5em;
+    line-height: 1;
+}
+
+.block.block-page.social-sharing {
+    border-left: transparent;
+    background-color: transparent;
+    margin-top: 2em;
+    padding: 0;
+    margin-bottom: 2em;
+}
+.social-sharing [class^="btn-"] .icon {
+    margin: 0;
+    float: none;
+    font-size: 2.8rem;
+}
